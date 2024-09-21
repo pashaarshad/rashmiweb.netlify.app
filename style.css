@@ -1,0 +1,297 @@
+:root{
+
+
+  --user-color : rgba(98, 233, 98, 0.952);
+  --bg-img : url(img/BG.html\ Images.webp);
+  
+
+
+}
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+header{
+   
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background-image:var(--bg-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+
+}
+
+nav{
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 
+   
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+    font-family: none;
+    
+    
+    
+  }
+  nav ul li :hover{
+    color: var(--user-color);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  nav img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    border-radius: 50%;
+    margin-top: 1%;
+    margin-left: 7%;
+  }
+
+  .secbg{
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  }
+  .secLeft{
+    /* border: 1px solid red ; */
+    height: 600px;
+    width: 30%;
+    float: right;
+  }
+  .secRight{
+    /* border: 1px solid red ; */
+    height: 600px;
+    width: 69%;
+    float: left;
+  }
+  .secLeft img{
+    border-radius: 50%;
+    height: 500px;
+    width: 300px;
+    padding: 80px 0px;
+  }
+  /* footer{
+    bottom: 0px;
+    height: 80px;
+    background-color: rgb(3, 8, 27)
+  } */
+  .about-text{
+    color : black;
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: default;
+    padding: 150px 100px ;
+    
+   
+} 
+.about-testsColor{
+  color : var(--user-color);
+}
+.active{
+  color : var(--user-color);
+}
+
+footer{
+  bottom: 0px;
+  height: 250px;
+  background-color: black;
+  justify-items: center;
+
+}
+footer h1,h2,p,img{
+
+  color:antiquewhite;
+  text-align: center;
+   justify-items: center;
+}
+
+footer h1 {
+    font-size: large;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer h2{
+  font-size: medium;
+
+}
+footer p a{
+  text-decoration: none;
+}
+.conter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.con{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+}
+.con1{
+  /* border: 1px solid blue; */
+  height: 70%;
+  width: 30%;
+  float: left;
+  margin-left: 2%;
+  margin-top: 7%;
+}
+.con1 img{
+  border-radius: 50%;
+  height: 70%;
+  width: 300px;
+  align-items: center;
+  align-content: center;
+  margin-left: 2%;
+}
+.con2{
+  /* border: 1px solid blue; */
+  height: 70%;
+  width: 50%;
+  float: right;
+  margin-right: 0%;
+  margin-top:7%;
+  
+}
+.con2 h2{
+  color: black;
+  text-align: justify;
+  display: inline;
+}
+.socialmedia img{ 
+   height: 30px;
+   width: 30px;
+   margin-top: 2%;
+
+}
+.socialmedia a{
+  text-decoration: none;
+  align-items: center;
+}
+@media(max-width : 900px){
+
+
+  header{
+   
+    top: 0px;
+    height: 60px;
+    width: 160%;
+    background-image:var(--bg-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+
+}
+
+
+
+.secbg{
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 995px;
+  width: 160%;
+}
+.secLeft img{
+  border-radius: 50%;
+  height: 500px;
+  width: 200px;
+  padding: 80px 0px;
+}
+.con1 img{
+  border-radius: 50%;
+  height: 60%;
+  width: 180px;
+  align-items: center;
+  align-content: center;
+  margin-right: 2px;;
+}
+
+footer{
+  bottom: 0px;
+  height: 250px;
+  width: 160%;
+  background-color: black;
+  justify-items: center;
+
+}
+.about-text{
+  color : black;
+  justify-items: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: default;
+  padding: 150px 100px ;
+  
+ 
+} 
+.con2 h2{
+  color: black;
+  text-align: justify;
+  display: inline;
+  font-size: 16px;
+}
+
+}
+
+footer h3 {
+  color: white;
+  float: right;
+  margin-right: 2%;
+}
+
+footer h3 a{
+  text-decoration: none;
+  color : var(--user-color);
+  float: right;
+ 
+}
+footer h1 {
+  font-size: 24px;
+}
+
+.ytimg img{
+height: 45px;
+  width: 100px;
+}
+.ytimg h1{
+
+color :red;
+font-size: 30px;
+margin-top : 1px;
+}
+.ytimg{
+
+display : flex;
+}
+.ytimg a {
+
+text-decoration: none;
+font-style : none;
+}
