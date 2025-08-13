@@ -877,6 +877,10 @@ section {
   line-height: 1.6;
 }
 
+.publications .gallery-section {
+  margin-top: 4rem;
+}
+
 /* Awards Section */
 .awards {
   background: var(--bg-secondary);

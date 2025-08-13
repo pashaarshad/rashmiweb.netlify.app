@@ -107,6 +107,36 @@ function initSwiperSliders() {
         },
     });
 
+    // Publications Swiper
+    const publicationsSwiper = new Swiper('.publications-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.publications-swiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.publications-swiper .swiper-button-next',
+            prevEl: '.publications-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
     // Awards Swiper
     const awardsSwiper = new Swiper('.awards-swiper', {
         slidesPerView: 1,
