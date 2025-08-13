@@ -1,8 +1,84 @@
 // Modern JavaScript for Interactive Website
 
+// Language state
+let currentLanguage = 'en';
+
+// Translation data for content not covered by data attributes
+const translations = {
+    en: {
+        langText: 'ಕನ್ನಡ',
+        typingStrings: [
+            'Librarian at Sheshadripuram College',
+            'Literary Writer & Poet', 
+            'Social Worker & Blood Donor',
+            'Program Anchor',
+            'Travel Enthusiast',
+            'Gardening Lover',
+            'Award-Winning Author',
+            'Community Leader'
+        ]
+    },
+    kn: {
+        langText: 'English',
+        typingStrings: [
+            'ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜಿನಲ್ಲಿ ಗ್ರಂಥಾಲಯಾಧ್ಯಕ್ಷೆ',
+            'ಸಾಹಿತ್ಯಿಕ ಲೇಖಕಿ ಮತ್ತು ಕವಯಿತ್ರಿ',
+            'ಸಮಾಜ ಸೇವಕಿ ಮತ್ತು ರಕ್ತದಾತ',
+            'ಕಾರ್ಯಕ್ರಮ ನಿರೂಪಕಿ',
+            'ಪ್ರವಾಸ ಪ್ರಿಯೆ',
+            'ತೋಟಗಾರಿಕೆ ಪ್ರಿಯೆ',
+            'ಪ್ರಶಸ್ತಿ ವಿಜೇತ ಲೇಖಕಿ',
+            'ಸಮುದಾಯ ನಾಯಕಿ'
+        ]
+    }
+};
+
+// Language toggle function
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'kn' : 'en';
+    
+    // Update language button text
+    const langText = document.getElementById('lang-text');
+    if (langText) {
+        langText.textContent = translations[currentLanguage].langText;
+    }
+    
+    // Update all elements with data attributes
+    const elements = document.querySelectorAll('[data-en][data-kn]');
+    elements.forEach(element => {
+        const text = element.getAttribute(`data-${currentLanguage}`);
+        if (text) {
+            element.innerHTML = text;
+        }
+    });
+    
+    // Update typing animation
+    updateTypingAnimation();
+    
+    // Store language preference
+    localStorage.setItem('preferredLanguage', currentLanguage);
+}
+
+// Initialize language from localStorage
+function initLanguage() {
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage && savedLanguage !== currentLanguage) {
+        toggleLanguage();
+    }
+}
+
+// Update typing animation with current language
+function updateTypingAnimation() {
+    if (window.typed) {
+        window.typed.destroy();
+    }
+    initTypingAnimation();
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
+    initLanguage();
     initNavigation();
     initTypingAnimation();
     initScrollAnimations();
@@ -54,17 +130,8 @@ function initNavigation() {
 
 // Typing animation
 function initTypingAnimation() {
-    const typed = new Typed('.auto-type', {
-        strings: [
-            'Librarian at Sheshadripuram College',
-            'Literary Writer & Poet', 
-            'Social Worker & Blood Donor',
-            'Program Anchor',
-            'Travel Enthusiast',
-            'Gardening Lover',
-            'Award-Winning Author',
-            'Community Leader'
-        ],
+    window.typed = new Typed('.auto-type', {
+        strings: translations[currentLanguage].typingStrings,
         typeSpeed: 80,
         backSpeed: 50,
         backDelay: 2000,
@@ -354,6 +421,7 @@ function initSmoothScrolling() {
 function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const mobileControls = document.querySelector('.mobile-nav-controls');
     
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
@@ -375,7 +443,7 @@ function initMobileMenu() {
         
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target) && !mobileControls.contains(e.target)) {
                 navMenu.classList.remove('active');
                 const spans = hamburger.querySelectorAll('span');
                 spans.forEach(span => {

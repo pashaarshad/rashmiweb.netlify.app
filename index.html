@@ -20,18 +20,29 @@
         <span>Rashmi</span>
       </div>
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
-        <li><a href="#publications" class="nav-link">Publications</a></li>
-        <li><a href="#awards" class="nav-link">Awards</a></li>
-        <li><a href="#youtube" class="nav-link">YouTube</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#home" class="nav-link" data-en="Home" data-kn="ಮುಖಪುಟ">Home</a></li>
+        <li><a href="#about" class="nav-link" data-en="About" data-kn="ನನ್ನ ಬಗ್ಗೆ">About</a></li>
+        <li><a href="#hobbies" class="nav-link" data-en="Hobbies" data-kn="ಹವ್ಯಾಸಗಳು">Hobbies</a></li>
+        <li><a href="#publications" class="nav-link" data-en="Publications" data-kn="ಪ್ರಕಟಣೆಗಳು">Publications</a></li>
+        <li><a href="#awards" class="nav-link" data-en="Awards" data-kn="ಪ್ರಶಸ್ತಿಗಳು">Awards</a></li>
+        <li><a href="#youtube" class="nav-link" data-en="YouTube" data-kn="ಯೂಟ್ಯೂಬ್">YouTube</a></li>
+        <li><a href="#contact" class="nav-link" data-en="Contact" data-kn="ಸಂಪರ್ಕ">Contact</a></li>
+        <li class="language-toggle-desktop">
+          <button class="language-btn" onclick="toggleLanguage()">
+            <i class="fas fa-language"></i>
+            <span id="lang-text">ಕನ್ನಡ</span>
+          </button>
+        </li>
       </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="mobile-nav-controls">
+        <button class="language-toggle-mobile" onclick="toggleLanguage()">
+          <i class="fas fa-language"></i>
+        </button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </nav>
@@ -41,16 +52,16 @@
     <div class="hero-container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Hi! I'm <span class="highlight">Rashmi K. Vishwanath</span></h1>
-          <p class="hero-subtitle">Librarian | Literary Writer | Social Worker</p>
+          <h1 data-en="Hi! I'm <span class='highlight'>Rashmi K. Vishwanath</span>" data-kn="ನಮಸ್ಕಾರ! ನಾನು <span class='highlight'>ರಶ್ಮಿ ಕೆ. ವಿಶ್ವನಾಥ್</span>">Hi! I'm <span class="highlight">Rashmi K. Vishwanath</span></h1>
+          <p class="hero-subtitle" data-en="Librarian | Literary Writer | Social Worker" data-kn="ಗ್ರಂಥಾಲಯಾಧ್ಯಕ್ಷೆ | ಸಾಹಿತ್ಯಿಕ ಲೇಖಕಿ | ಸಮಾಜ ಸೇವಕಿ">Librarian | Literary Writer | Social Worker</p>
           <div class="hero-details">
             <div class="detail-item">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Mysore, Karnataka</span>
+              <span data-en="Mysore, Karnataka" data-kn="ಮೈಸೂರು, ಕರ್ನಾಟಕ">Mysore, Karnataka</span>
             </div>
             <div class="detail-item">
               <i class="fas fa-briefcase"></i>
-              <span>Sheshadripuram College</span>
+              <span data-en="Sheshadripuram College" data-kn="ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜು">Sheshadripuram College</span>
             </div>
             <div class="detail-item">
               <i class="fas fa-phone"></i>
@@ -68,7 +79,7 @@
               <i class="fab fa-instagram"></i>
             </a>
           </div>
-          <a href="#about" class="cta-button">Learn More About Me</a>
+          <a href="#about" class="cta-button" data-en="Learn More About Me" data-kn="ನನ್ನ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ">Learn More About Me</a>
         </div>
         <div class="hero-image">
           <img src="img/logomam.jpg" alt="Rashmi K. Vishwanath">
@@ -84,26 +95,26 @@
   <section id="about" class="about">
     <div class="container">
       <div class="section-header">
-        <h2>About Me</h2>
-        <p>Discover my journey and passions</p>
+        <h2 data-en="About Me" data-kn="ನನ್ನ ಬಗ್ಗೆ">About Me</h2>
+        <p data-en="Discover my journey and passions" data-kn="ನನ್ನ ಪ್ರಯಾಣ ಮತ್ತು ಆಸಕ್ತಿಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ">Discover my journey and passions</p>
       </div>
       <div class="about-content">
         <div class="about-image">
           <img src="img/logomam.jpg" alt="Rashmi K. Vishwanath">
         </div>
         <div class="about-text">
-          <h3>A Dedicated Librarian & Literary Writer</h3>
-          <p>
+          <h3 data-en="A Dedicated Librarian & Literary Writer" data-kn="ಸಮರ್ಪಿತ ಗ್ರಂಥಾಲಯಾಧ್ಯಕ್ಷೆ ಮತ್ತು ಸಾಹಿತ್ಯಿಕ ಲೇಖಕಿ">A Dedicated Librarian & Literary Writer</h3>
+          <p data-en="Rashmi K. Vishwanath is a distinguished librarian at Sheshadripuram College in Mysore, Karnataka. She is a passionate literary writer with extensive experience in writing and reading poems, essays, stories, and short verses (Hanigavana)." data-kn="ರಶ್ಮಿ ಕೆ. ವಿಶ್ವನಾಥ್ ಅವರು ಮೈಸೂರಿನ ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜಿನಲ್ಲಿ ಪ್ರತಿಷ್ಠಿತ ಗ್ರಂಥಾಲಯಾಧ್ಯಕ್ಷರಾಗಿದ್ದಾರೆ. ಅವರು ಕವಿತೆಗಳು, ಲೇಖನಗಳು, ಕಥೆಗಳು ಮತ್ತು ಸಣ್ಣ ಪದ್ಯಗಳನ್ನು (ಹನಿಗವನ) ಬರೆಯುವಲ್ಲಿ ವ್ಯಾಪಕ ಅನುಭವ ಹೊಂದಿರುವ ಉತ್ಸಾಹಭರಿತ ಸಾಹಿತ್ಯಿಕ ಲೇಖಕಿ.">
             Rashmi K. Vishwanath is a distinguished librarian at Sheshadripuram College in Mysore, Karnataka. 
             She is a passionate literary writer with extensive experience in writing and reading poems, essays, 
             stories, and short verses (Hanigavana).
           </p>
-          <p>
+          <p data-en="Her commitment extends beyond literature to social service, including blood and hair donation, and active participation in community programs. As an accomplished anchor and traveler, she brings diverse experiences to her literary work." data-kn="ಅವರ ಬದ್ಧತೆಯು ಸಾಹಿತ್ಯವನ್ನು ಮೀರಿ ರಕ್ತ ಮತ್ತು ಕೂದಲು ದಾನ ಸೇರಿದಂತೆ ಸಮಾಜ ಸೇವೆಗೆ ವಿಸ್ತರಿಸುತ್ತದೆ ಮತ್ತು ಸಮುದಾಯ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಸಕ್ರಿಯ ಭಾಗವಹಿಸುವಿಕೆ. ನಿಪುಣ ನಿರೂಪಕಿ ಮತ್ತು ಪ್ರವಾಸಿಯಾಗಿ, ಅವರು ತಮ್ಮ ಸಾಹಿತ್ಯ ಕೃತಿಗಳಿಗೆ ವೈವಿಧ್ಯಮಯ ಅನುಭವಗಳನ್ನು ತರುತ್ತಾರೆ.">
             Her commitment extends beyond literature to social service, including blood and hair donation, 
             and active participation in community programs. As an accomplished anchor and traveler, 
             she brings diverse experiences to her literary work.
           </p>
-          <p>
+          <p data-en="With qualifications in ITI in Computer Operator & Programming Assistant, M.L.I Sc, and M.A in Kannada, Rashmi has a strong foundation of knowledge and skills that she shares through her various platforms and literary contributions." data-kn="ಕಂಪ್ಯೂಟರ್ ಆಪರೇಟರ್ ಮತ್ತು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಸಹಾಯಕದಲ್ಲಿ ಐಟಿಐ, ಎಂ.ಎಲ್.ಐ ಸೈನ್ಸ್, ಮತ್ತು ಕನ್ನಡದಲ್ಲಿ ಎಂ.ಎ ಅರ್ಹತೆಗಳೊಂದಿಗೆ, ರಶ್ಮಿ ಅವರು ತಮ್ಮ ವಿವಿಧ ವೇದಿಕೆಗಳು ಮತ್ತು ಸಾಹಿತ್ಯಿಕ ಕೊಡುಗೆಗಳ ಮೂಲಕ ಹಂಚಿಕೊಳ್ಳುವ ಜ್ಞಾನ ಮತ್ತು ಕೌಶಲ್ಯಗಳ ದೃಢ ಅಡಿಪಾಯವನ್ನು ಹೊಂದಿದ್ದಾರೆ.">
             With qualifications in ITI in Computer Operator & Programming Assistant, M.L.I Sc, and M.A in Kannada, 
             Rashmi has a strong foundation of knowledge and skills that she shares through her various platforms 
             and literary contributions.
@@ -112,15 +123,15 @@
             <div class="info-item">
               <i class="fas fa-graduation-cap"></i>
               <div>
-                <strong>Education</strong>
-                <span>M.A Kannada, M.L.I Sc, ITI Computer Operator</span>
+                <strong data-en="Education" data-kn="ಶಿಕ್ಷಣ">Education</strong>
+                <span data-en="M.A Kannada, M.L.I Sc, ITI Computer Operator" data-kn="ಎಂ.ಎ ಕನ್ನಡ, ಎಂ.ಎಲ್.ಐ ಸೈನ್ಸ್, ಐಟಿಐ ಕಂಪ್ಯೂಟರ್ ಆಪರೇಟರ್">M.A Kannada, M.L.I Sc, ITI Computer Operator</span>
               </div>
             </div>
             <div class="info-item">
               <i class="fas fa-building"></i>
               <div>
-                <strong>Institution</strong>
-                <span>Sheshadripuram College, Mysore</span>
+                <strong data-en="Institution" data-kn="ಸಂಸ್ಥೆ">Institution</strong>
+                <span data-en="Sheshadripuram College, Mysore" data-kn="ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜು, ಮೈಸೂರು">Sheshadripuram College, Mysore</span>
               </div>
             </div>
           </div>
@@ -133,45 +144,45 @@
   <section id="hobbies" class="hobbies">
     <div class="container">
       <div class="section-header">
-        <h2>My Hobbies & Interests</h2>
-        <p>Exploring life through diverse passions</p>
+        <h2 data-en="My Hobbies & Interests" data-kn="ನನ್ನ ಹವ್ಯಾಸಗಳು ಮತ್ತು ಆಸಕ್ತಿಗಳು">My Hobbies & Interests</h2>
+        <p data-en="Exploring life through diverse passions" data-kn="ವೈವಿಧ್ಯಮಯ ಆಸಕ್ತಿಗಳ ಮೂಲಕ ಜೀವನವನ್ನು ಅನ್ವೇಷಿಸುವುದು">Exploring life through diverse passions</p>
       </div>
       <div class="hobbies-grid">
         <div class="hobby-card">
           <i class="fas fa-pen-fancy"></i>
-          <h3>Writing & Reading</h3>
-          <p>Poems, essays, stories, and short verses (Hanigavana)</p>
+          <h3 data-en="Writing & Reading" data-kn="ಬರವಣಿಗೆ ಮತ್ತು ಓದುವಿಕೆ">Writing & Reading</h3>
+          <p data-en="Poems, essays, stories, and short verses (Hanigavana)" data-kn="ಕವಿತೆಗಳು, ಲೇಖನಗಳು, ಕಥೆಗಳು ಮತ್ತು ಸಣ್ಣ ಪದ್ಯಗಳು (ಹನಿಗವನ)">Poems, essays, stories, and short verses (Hanigavana)</p>
         </div>
         <div class="hobby-card">
           <i class="fas fa-microphone"></i>
-          <h3>Anchoring Programs</h3>
-          <p>Hosting and presenting various events and programs</p>
+          <h3 data-en="Anchoring Programs" data-kn="ಕಾರ್ಯಕ್ರಮ ನಿರೂಪಣೆ">Anchoring Programs</h3>
+          <p data-en="Hosting and presenting various events and programs" data-kn="ವಿವಿಧ ಸಂದರ್ಭಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಆಯೋಜಿಸುವುದು ಮತ್ತು ಪ್ರಸ್ತುತಪಡಿಸುವುದು">Hosting and presenting various events and programs</p>
         </div>
         <div class="hobby-card">
           <i class="fas fa-plane"></i>
-          <h3>Traveling</h3>
-          <p>Exploring new places and experiencing different cultures</p>
+          <h3 data-en="Traveling" data-kn="ಪ್ರವಾಸ">Traveling</h3>
+          <p data-en="Exploring new places and experiencing different cultures" data-kn="ಹೊಸ ಸ್ಥಳಗಳನ್ನು ಅನ್ವೇಷಿಸುವುದು ಮತ್ತು ವಿಭಿನ್ನ ಸಂಸ್ಕೃತಿಗಳನ್ನು ಅನುಭವಿಸುವುದು">Exploring new places and experiencing different cultures</p>
         </div>
         <div class="hobby-card">
           <i class="fas fa-hands-helping"></i>
-          <h3>Social Service</h3>
-          <p>Active involvement in social thinking and community service</p>
+          <h3 data-en="Social Service" data-kn="ಸಮಾಜ ಸೇವೆ">Social Service</h3>
+          <p data-en="Active involvement in social thinking and community service" data-kn="ಸಾಮಾಜಿಕ ಚಿಂತನೆ ಮತ್ತು ಸಮುದಾಯ ಸೇವೆಯಲ್ಲಿ ಸಕ್ರಿಯ ಒಳಗೊಳ್ಳುವಿಕೆ">Active involvement in social thinking and community service</p>
         </div>
         <div class="hobby-card">
           <i class="fas fa-heart"></i>
-          <h3>Blood & Hair Donation</h3>
-          <p>Contributing to society through regular donations</p>
+          <h3 data-en="Blood & Hair Donation" data-kn="ರಕ್ತ ಮತ್ತು ಕೂದಲು ದಾನ">Blood & Hair Donation</h3>
+          <p data-en="Contributing to society through regular donations" data-kn="ನಿಯಮಿತ ದಾನಗಳ ಮೂಲಕ ಸಮಾಜಕ್ಕೆ ಕೊಡುಗೆ ನೀಡುವುದು">Contributing to society through regular donations</p>
         </div>
         <div class="hobby-card">
           <i class="fas fa-seedling"></i>
-          <h3>Gardening</h3>
-          <p>Nurturing plants and creating beautiful gardens</p>
+          <h3 data-en="Gardening" data-kn="ತೋಟಗಾರಿಕೆ">Gardening</h3>
+          <p data-en="Nurturing plants and creating beautiful gardens" data-kn="ಸಸ್ಯಗಳನ್ನು ಪೋಷಿಸುವುದು ಮತ್ತು ಸುಂದರ ತೋಟಗಳನ್ನು ಸೃಷ್ಟಿಸುವುದು">Nurturing plants and creating beautiful gardens</p>
         </div>
       </div>
       
       <!-- Photo Gallery with Swiper -->
       <div class="gallery-section">
-        <h3>Gallery</h3>
+        <h3 data-en="Gallery" data-kn="ಚಿತ್ರಶಾಲೆ">Gallery</h3>
         <div class="swiper hobbies-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -180,43 +191,43 @@
                 <img src="img/g1.jpg" alt="Writing & Literature" loading="lazy">
               </picture>
               <div class="slide-content">
-                <h4>Literary Work</h4>
-                <p>Writing poems and essays</p>
+                <h4 data-en="Literary Work" data-kn="ಸಾಹಿತ್ಯಿಕ ಕೃತಿ">Literary Work</h4>
+                <p data-en="Writing poems and essays" data-kn="ಕವಿತೆಗಳು ಮತ್ತು ಲೇಖನಗಳ ಬರವಣಿಗೆ">Writing poems and essays</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/g2.jpg" alt="Anchoring Programs" loading="lazy">
               <div class="slide-content">
-                <h4>Program Anchoring</h4>
-                <p>Hosting cultural events</p>
+                <h4 data-en="Program Anchoring" data-kn="ಕಾರ್ಯಕ್ರಮ ನಿರೂಪಣೆ">Program Anchoring</h4>
+                <p data-en="Hosting cultural events" data-kn="ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳ ಆಯೋಜನೆ">Hosting cultural events</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/g3.jpg" alt="Travel" loading="lazy">
               <div class="slide-content">
-                <h4>Travel Adventures</h4>
-                <p>Exploring new destinations</p>
+                <h4 data-en="Travel Adventures" data-kn="ಪ್ರವಾಸ ಸಾಹಸಗಳು">Travel Adventures</h4>
+                <p data-en="Exploring new destinations" data-kn="ಹೊಸ ಗಮ್ಯಸ್ಥಾನಗಳ ಅನ್ವೇಷಣೆ">Exploring new destinations</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/g4.jpg" alt="Social Service" loading="lazy">
               <div class="slide-content">
-                <h4>Community Service</h4>
-                <p>Social work and donations</p>
+                <h4 data-en="Community Service" data-kn="ಸಮುದಾಯ ಸೇವೆ">Community Service</h4>
+                <p data-en="Social work and donations" data-kn="ಸಮಾಜ ಸೇವೆ ಮತ್ತು ದಾನಗಳು">Social work and donations</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/g5.jpg" alt="Gardening" loading="lazy">
               <div class="slide-content">
-                <h4>Gardening</h4>
-                <p>Growing beautiful plants</p>
+                <h4 data-en="Gardening" data-kn="ತೋಟಗಾರಿಕೆ">Gardening</h4>
+                <p data-en="Growing beautiful plants" data-kn="ಸುಂದರ ಸಸ್ಯಗಳ ಬೆಳವಣಿಗೆ">Growing beautiful plants</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/g6.jpg" alt="Blood Donation" loading="lazy">
               <div class="slide-content">
-                <h4>Blood Donation</h4>
-                <p>Contributing to society</p>
+                <h4 data-en="Blood Donation" data-kn="ರಕ್ತದಾನ">Blood Donation</h4>
+                <p data-en="Contributing to society" data-kn="ಸಮಾಜಕ್ಕೆ ಕೊಡುಗೆ">Contributing to society</p>
               </div>
             </div>
             <!-- <div class="swiper-slide">
@@ -246,8 +257,8 @@
   <section id="publications" class="publications">
     <div class="container">
       <div class="section-header">
-        <h2>Publications</h2>
-        <p>My literary contributions to various magazines and newspapers</p>
+        <h2 data-en="Publications" data-kn="ಪ್ರಕಟಣೆಗಳು">Publications</h2>
+        <p data-en="My literary contributions to various magazines and newspapers" data-kn="ವಿವಿಧ ನಿಯತಕಾಲಿಕೆಗಳು ಮತ್ತು ಪತ್ರಿಕೆಗಳಿಗೆ ನನ್ನ ಸಾಹಿತ್ಯಿಕ ಕೊಡುಗೆಗಳು">My literary contributions to various magazines and newspapers</p>
       </div>
       <div class="publications-grid">
         <div class="publication-item">
@@ -255,9 +266,9 @@
             <i class="fas fa-book-open"></i>
           </div>
           <div class="publication-content">
-            <h3>Gnanodaya College Magazine</h3>
+            <h3 data-en="Gnanodaya College Magazine" data-kn="ಜ್ಞಾನೋದಯ ಕಾಲೇಜು ನಿಯತಕಾಲಿಕೆ">Gnanodaya College Magazine</h3>
             <p class="publication-period">2012 - 2017</p>
-            <p>Articles and poems published in the college magazine</p>
+            <p data-en="Articles and poems published in the college magazine" data-kn="ಕಾಲೇಜು ನಿಯತಕಾಲಿಕೆಯಲ್ಲಿ ಪ್ರಕಟಿತ ಲೇಖನಗಳು ಮತ್ತು ಕವಿತೆಗಳು">Articles and poems published in the college magazine</p>
           </div>
         </div>
         
@@ -266,9 +277,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Jhenkara Monthly Magazine</h3>
-            <p class="publication-period">Published</p>
-            <p>Poetry contribution to this monthly literary magazine</p>
+            <h3 data-en="Jhenkara Monthly Magazine" data-kn="ಝೆಂಕಾರ ಮಾಸಿಕ ನಿಯತಕಾಲಿಕೆ">Jhenkara Monthly Magazine</h3>
+            <p class="publication-period" data-en="Published" data-kn="ಪ್ರಕಟಿತ">Published</p>
+            <p data-en="Poetry contribution to this monthly literary magazine" data-kn="ಈ ಮಾಸಿಕ ಸಾಹಿತ್ಯ ನಿಯತಕಾಲಿಕೆಗೆ ಕಾವ್ಯ ಕೊಡುಗೆ">Poetry contribution to this monthly literary magazine</p>
           </div>
         </div>
         
@@ -277,9 +288,9 @@
             <i class="fas fa-scroll"></i>
           </div>
           <div class="publication-content">
-            <h3>Anavarna Magazine</h3>
+            <h3 data-en="Anavarna Magazine" data-kn="ಅನವರ್ಣ ನಿಯತಕಾಲಿಕೆ">Anavarna Magazine</h3>
             <p class="publication-period">2018 - 2024</p>
-            <p>Poems and articles in Sheshadripuram College's biannual magazine</p>
+            <p data-en="Poems and articles in Sheshadripuram College's biannual magazine" data-kn="ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜಿನ ಅರ್ಧವಾರ್ಷಿಕ ನಿಯತಕಾಲಿಕೆಯಲ್ಲಿ ಕವಿತೆಗಳು ಮತ್ತು ಲೇಖನಗಳು">Poems and articles in Sheshadripuram College's biannual magazine</p>
           </div>
         </div>
         
@@ -288,9 +299,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Sanjevahini Newspaper</h3>
-            <p class="publication-period">Bangalore</p>
-            <p>Poetry published in this Bangalore-based newspaper</p>
+            <h3 data-en="Sanjevahini Newspaper" data-kn="ಸಂಜೆವಾಹಿನಿ ಪತ್ರಿಕೆ">Sanjevahini Newspaper</h3>
+            <p class="publication-period" data-en="Bangalore" data-kn="ಬೆಂಗಳೂರು">Bangalore</p>
+            <p data-en="Poetry published in this Bangalore-based newspaper" data-kn="ಈ ಬೆಂಗಳೂರು ಆಧಾರಿತ ಪತ್ರಿಕೆಯಲ್ಲಿ ಪ್ರಕಟಿತ ಕಾವ್ಯ">Poetry published in this Bangalore-based newspaper</p>
           </div>
         </div>
         
@@ -299,9 +310,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Gadagavani Newspaper</h3>
-            <p class="publication-period">Gadag</p>
-            <p>Articles published in this regional newspaper</p>
+            <h3 data-en="Gadagavani Newspaper" data-kn="ಗದಗವಾಣಿ ಪತ್ರಿಕೆ">Gadagavani Newspaper</h3>
+            <p class="publication-period" data-en="Gadag" data-kn="ಗದಗ">Gadag</p>
+            <p data-en="Articles published in this regional newspaper" data-kn="ಈ ಪ್ರಾದೇಶಿಕ ಪತ್ರಿಕೆಯಲ್ಲಿ ಪ್ರಕಟಿತ ಲೇಖನಗಳು">Articles published in this regional newspaper</p>
           </div>
         </div>
         
@@ -310,9 +321,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Baalina Belaku Newspaper</h3>
-            <p class="publication-period">Chamarajanagar</p>
-            <p>Articles focusing on educational and social topics</p>
+            <h3 data-en="Baalina Belaku Newspaper" data-kn="ಬಾಲಿನ ಬೆಳಕು ಪತ್ರಿಕೆ">Baalina Belaku Newspaper</h3>
+            <p class="publication-period" data-en="Chamarajanagar" data-kn="ಚಾಮರಾಜನಗರ">Chamarajanagar</p>
+            <p data-en="Articles focusing on educational and social topics" data-kn="ಶಿಕ್ಷಣ ಮತ್ತು ಸಾಮಾಜಿಕ ವಿಷಯಗಳ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿದ ಲೇಖನಗಳು">Articles focusing on educational and social topics</p>
           </div>
         </div>
         
@@ -321,9 +332,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Udayarashmi Newspaper</h3>
-            <p class="publication-period">Vijayapura</p>
-            <p>Regular article contributions on various subjects</p>
+            <h3 data-en="Udayarashmi Newspaper" data-kn="ಉದಯರಶ್ಮಿ ಪತ್ರಿಕೆ">Udayarashmi Newspaper</h3>
+            <p class="publication-period" data-en="Vijayapura" data-kn="ವಿಜಯಪುರ">Vijayapura</p>
+            <p data-en="Regular article contributions on various subjects" data-kn="ವಿವಿಧ ವಿಷಯಗಳ ಮೇಲೆ ನಿಯಮಿತ ಲೇಖನ ಕೊಡುಗೆಗಳು">Regular article contributions on various subjects</p>
           </div>
         </div>
         
@@ -332,9 +343,9 @@
             <i class="fas fa-newspaper"></i>
           </div>
           <div class="publication-content">
-            <h3>Sanje Express Newspaper</h3>
-            <p class="publication-period">Published</p>
-            <p>Article contribution to this newspaper</p>
+            <h3 data-en="Sanje Express Newspaper" data-kn="ಸಂಜೆ ಎಕ್ಸ್‌ಪ್ರೆಸ್ ಪತ್ರಿಕೆ">Sanje Express Newspaper</h3>
+            <p class="publication-period" data-en="Published" data-kn="ಪ್ರಕಟಿತ">Published</p>
+            <p data-en="Article contribution to this newspaper" data-kn="ಈ ಪತ್ರಿಕೆಗೆ ಲೇಖನ ಕೊಡುಗೆ">Article contribution to this newspaper</p>
           </div>
         </div>
         
@@ -343,9 +354,9 @@
             <i class="fas fa-microphone-alt"></i>
           </div>
           <div class="publication-content">
-            <h3>Poetry Recitations</h3>
-            <p class="publication-period">Multiple Events</p>
-            <p>Poem recitations in several poetry gatherings and competitions</p>
+            <h3 data-en="Poetry Recitations" data-kn="ಕವಿತಾ ಪಠಣಗಳು">Poetry Recitations</h3>
+            <p class="publication-period" data-en="Multiple Events" data-kn="ಅನೇಕ ಕಾರ್ಯಕ್ರಮಗಳು">Multiple Events</p>
+            <p data-en="Poem recitations in several poetry gatherings and competitions" data-kn="ಹಲವಾರು ಕವಿಗೋಷ್ಠಿಗಳು ಮತ್ತು ಸ್ಪರ್ಧೆಗಳಲ್ಲಿ ಕವಿತಾ ಪಠಣಗಳು">Poem recitations in several poetry gatherings and competitions</p>
           </div>
         </div>
         
@@ -354,65 +365,65 @@
             <i class="fas fa-trophy"></i>
           </div>
           <div class="publication-content">
-            <h3>Mandara Literary Group</h3>
-            <p class="publication-period">Recognition</p>
-            <p>Received 30 certificates and gifted books as awards</p>
+            <h3 data-en="Mandara Literary Group" data-kn="ಮಂದಾರ ಸಾಹಿತ್ಯ ಗುಂಪು">Mandara Literary Group</h3>
+            <p class="publication-period" data-en="Recognition" data-kn="ಗುರುತಿಸುವಿಕೆ">Recognition</p>
+            <p data-en="Received 30 certificates and gifted books as awards" data-kn="ಪ್ರಶಸ್ತಿಗಳಾಗಿ 30 ಪ್ರಮಾಣಪತ್ರಗಳು ಮತ್ತು ಉಡುಗೊರೆ ಪುಸ್ತಕಗಳನ್ನು ಪಡೆದರು">Received 30 certificates and gifted books as awards</p>
           </div>
         </div>
       </div>
       
       <!-- Publications Gallery with Swiper -->
       <div class="gallery-section">
-        <h3>Publications Gallery</h3>
+        <h3 data-en="Publications Gallery" data-kn="ಪ್ರಕಟಣೆಗಳ ಚಿತ್ರಶಾಲೆ">Publications Gallery</h3>
         <div class="swiper publications-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="img/p1.jpg" alt="Gnanodaya College Magazine" loading="lazy">
               <div class="slide-content">
-                <h4>College Magazine</h4>
-                <p>Gnanodaya College (2012-2017)</p>
+                <h4 data-en="College Magazine" data-kn="ಕಾಲೇಜು ನಿಯತಕಾಲಿಕೆ">College Magazine</h4>
+                <p data-en="Gnanodaya College (2012-2017)" data-kn="ಜ್ಞಾನೋದಯ ಕಾಲೇಜು (2012-2017)">Gnanodaya College (2012-2017)</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p2.jpg" alt="Jhenkara Monthly Magazine" loading="lazy">
               <div class="slide-content">
-                <h4>Jhenkara Magazine</h4>
-                <p>Monthly literary publication</p>
+                <h4 data-en="Jhenkara Magazine" data-kn="ಝೆಂಕಾರ ನಿಯತಕಾಲಿಕೆ">Jhenkara Magazine</h4>
+                <p data-en="Monthly literary publication" data-kn="ಮಾಸಿಕ ಸಾಹಿತ್ಯ ಪ್ರಕಟಣೆ">Monthly literary publication</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p3.jpg" alt="Anavarna Magazine" loading="lazy">
               <div class="slide-content">
-                <h4>Anavarna Magazine</h4>
-                <p>Sheshadripuram College (2018-2024)</p>
+                <h4 data-en="Anavarna Magazine" data-kn="ಅನವರ್ಣ ನಿಯತಕಾಲಿಕೆ">Anavarna Magazine</h4>
+                <p data-en="Sheshadripuram College (2018-2024)" data-kn="ಶೇಷಾದ್ರಿಪುರಂ ಕಾಲೇಜು (2018-2024)">Sheshadripuram College (2018-2024)</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p4.jpg" alt="Sanjevahini Newspaper" loading="lazy">
               <div class="slide-content">
-                <h4>Sanjevahini Newspaper</h4>
-                <p>Bangalore publication</p>
+                <h4 data-en="Sanjevahini Newspaper" data-kn="ಸಂಜೆವಾಹಿನಿ ಪತ್ರಿಕೆ">Sanjevahini Newspaper</h4>
+                <p data-en="Bangalore publication" data-kn="ಬೆಂಗಳೂರು ಪ್ರಕಟಣೆ">Bangalore publication</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p5.jpg" alt="Gadagavani Newspaper" loading="lazy">
               <div class="slide-content">
-                <h4>Gadagavani Newspaper</h4>
-                <p>Regional newspaper, Gadag</p>
+                <h4 data-en="Gadagavani Newspaper" data-kn="ಗದಗವಾಣಿ ಪತ್ರಿಕೆ">Gadagavani Newspaper</h4>
+                <p data-en="Regional newspaper, Gadag" data-kn="ಪ್ರಾದೇಶಿಕ ಪತ್ರಿಕೆ, ಗದಗ">Regional newspaper, Gadag</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p6.jpg" alt="Baalina Belaku Newspaper" loading="lazy">
               <div class="slide-content">
-                <h4>Baalina Belaku</h4>
-                <p>Educational newspaper</p>
+                <h4 data-en="Baalina Belaku" data-kn="ಬಾಲಿನ ಬೆಳಕು">Baalina Belaku</h4>
+                <p data-en="Educational newspaper" data-kn="ಶಿಕ್ಷಣಿಕ ಪತ್ರಿಕೆ">Educational newspaper</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/p7.jpg" alt="Udayarashmi Newspaper" loading="lazy">
               <div class="slide-content">
-                <h4>Udayarashmi Newspaper</h4>
-                <p>Vijayapura publication</p>
+                <h4 data-en="Udayarashmi Newspaper" data-kn="ಉದಯರಶ್ಮಿ ಪತ್ರಿಕೆ">Udayarashmi Newspaper</h4>
+                <p data-en="Vijayapura publication" data-kn="ವಿಜಯಪುರ ಪ್ರಕಟಣೆ">Vijayapura publication</p>
               </div>
             </div>
             <!-- <div class="swiper-slide">
@@ -449,8 +460,8 @@
   <section id="awards" class="awards">
     <div class="container">
       <div class="section-header">
-        <h2>Awards & Recognition</h2>
-        <p>Honoring literary excellence and social contribution</p>
+        <h2 data-en="Awards & Recognition" data-kn="ಪ್ರಶಸ್ತಿಗಳು ಮತ್ತು ಗುರುತಿಸುವಿಕೆ">Awards & Recognition</h2>
+        <p data-en="Honoring literary excellence and social contribution" data-kn="ಸಾಹಿತ್ಯಿಕ ಉತ್ಕೃಷ್ಟತೆ ಮತ್ತು ಸಾಮಾಜಿಕ ಕೊಡುಗೆಯನ್ನು ಗೌರವಿಸುವುದು">Honoring literary excellence and social contribution</p>
       </div>
       <div class="awards-grid">
         <div class="award-card featured">
@@ -458,9 +469,9 @@
             <i class="fas fa-crown"></i>
           </div>
           <div class="award-content">
-            <h3>Kavyashree Award</h3>
-            <p class="award-org">Dr. Jeeshamp Literary Forum, Mandya</p>
-            <p class="award-desc">Recognition for outstanding contribution to Kannada poetry</p>
+            <h3 data-en="Kavyashree Award" data-kn="ಕಾವ್ಯಶ್ರೀ ಪ್ರಶಸ್ತಿ">Kavyashree Award</h3>
+            <p class="award-org" data-en="Dr. Jeeshamp Literary Forum, Mandya" data-kn="ಡಾ. ಜೀಶಾಂಪ್ ಸಾಹಿತ್ಯ ವೇದಿಕೆ, ಮಂಡ್ಯ">Dr. Jeeshamp Literary Forum, Mandya</p>
+            <p class="award-desc" data-en="Recognition for outstanding contribution to Kannada poetry" data-kn="ಕನ್ನಡ ಕಾವ್ಯಕ್ಕೆ ಅಸಾಧಾರಣ ಕೊಡುಗೆಗಾಗಿ ಗುರುತಿಸುವಿಕೆ">Recognition for outstanding contribution to Kannada poetry</p>
           </div>
         </div>
         
@@ -469,9 +480,9 @@
             <i class="fas fa-medal"></i>
           </div>
           <div class="award-content">
-            <h3>Sahitya Navachetana National Award</h3>
-            <p class="award-org">Nakshatra Sahitya Educational and Cultural Trust (Regd.), Talur</p>
-            <p class="award-desc">National recognition for literary excellence</p>
+            <h3 data-en="Sahitya Navachetana National Award" data-kn="ಸಾಹಿತ್ಯ ನವಚೇತನ ರಾಷ್ಟ್ರೀಯ ಪ್ರಶಸ್ತಿ">Sahitya Navachetana National Award</h3>
+            <p class="award-org" data-en="Nakshatra Sahitya Educational and Cultural Trust (Regd.), Talur" data-kn="ನಕ್ಷತ್ರ ಸಾಹಿತ್ಯ ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಟ್ರಸ್ಟ್ (ನೋಂದಾ.), ತಾಲೂರು">Nakshatra Sahitya Educational and Cultural Trust (Regd.), Talur</p>
+            <p class="award-desc" data-en="National recognition for literary excellence" data-kn="ಸಾಹಿತ್ಯಿಕ ಉತ್ಕೃಷ್ಟತೆಗಾಗಿ ರಾಷ್ಟ್ರೀಯ ಗುರುತಿಸುವಿಕೆ">National recognition for literary excellence</p>
           </div>
         </div>
         
@@ -480,9 +491,9 @@
             <i class="fas fa-user-tie"></i>
           </div>
           <div class="award-content">
-            <h3>District President</h3>
-            <p class="award-org">Karunada Kannada Literary and Cultural Association, Bangalore</p>
-            <p class="award-desc">Appointed as District President for Mysore Division</p>
+            <h3 data-en="District President" data-kn="ಜಿಲ್ಲಾ ಅಧ್ಯಕ್ಷೆ">District President</h3>
+            <p class="award-org" data-en="Karunada Kannada Literary and Cultural Association, Bangalore" data-kn="ಕರುನಾಡ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಸಂಘ, ಬೆಂಗಳೂರು">Karunada Kannada Literary and Cultural Association, Bangalore</p>
+            <p class="award-desc" data-en="Appointed as District President for Mysore Division" data-kn="ಮೈಸೂರು ವಿಭಾಗಕ್ಕೆ ಜಿಲ್ಲಾ ಅಧ್ಯಕ್ಷೆಯಾಗಿ ನೇಮಕ">Appointed as District President for Mysore Division</p>
           </div>
         </div>
         
@@ -491,9 +502,9 @@
             <i class="fas fa-users"></i>
           </div>
           <div class="award-content">
-            <h3>Admin - Literary Group</h3>
-            <p class="award-org">Mandara Literary Lovers Group, Facebook</p>
-            <p class="award-desc">Managing and fostering literary community online</p>
+            <h3 data-en="Admin - Literary Group" data-kn="ನಿರ್ವಾಹಕೆ - ಸಾಹಿತ್ಯ ಗುಂಪು">Admin - Literary Group</h3>
+            <p class="award-org" data-en="Mandara Literary Lovers Group, Facebook" data-kn="ಮಂದಾರ ಸಾಹಿತ್ಯ ಪ್ರೇಮಿಗಳ ಗುಂಪು, ಫೇಸ್‌ಬುಕ್">Mandara Literary Lovers Group, Facebook</p>
+            <p class="award-desc" data-en="Managing and fostering literary community online" data-kn="ಆನ್‌ಲೈನ್ ಸಾಹಿತ್ಯ ಸಮುದಾಯವನ್ನು ನಿರ್ವಹಿಸುವುದು ಮತ್ತು ಪೋಷಿಸುವುದು">Managing and fostering literary community online</p>
           </div>
         </div>
         
@@ -502,72 +513,72 @@
             <i class="fas fa-rupee-sign"></i>
           </div>
           <div class="award-content">
-            <h3>First Prize (₹2500/-)</h3>
-            <p class="award-org">Kannada Struggle Committee, Bangalore</p>
-            <p class="award-desc">For the poem "Ileya Madilalli" (In the Lap of Tenderness)</p>
+            <h3 data-en="First Prize (₹2500/-)" data-kn="ಪ್ರಥಮ ಪ್ರಶಸ್ತಿ (₹2500/-)">First Prize (₹2500/-)</h3>
+            <p class="award-org" data-en="Kannada Struggle Committee, Bangalore" data-kn="ಕನ್ನಡ ಹೋರಾಟ ಸಮಿತಿ, ಬೆಂಗಳೂರು">Kannada Struggle Committee, Bangalore</p>
+            <p class="award-desc" data-en="For the poem \"Ileya Madilalli\" (In the Lap of Tenderness)" data-kn="\"ಇಳೆಯ ಮಡಿಲಲ್ಲಿ\" ಕವಿತೆಗಾಗಿ (ಮೃದುತ್ವದ ತೊಟ್ಟಿಲಲ್ಲಿ)">For the poem "Ileya Madilalli" (In the Lap of Tenderness)</p>
           </div>
         </div>
       </div>
       
       <!-- Awards Gallery with Swiper -->
       <div class="gallery-section">
-        <h3>Awards Gallery</h3>
+        <h3 data-en="Awards Gallery" data-kn="ಪ್ರಶಸ್ತಿಗಳ ಚಿತ್ರಶಾಲೆ">Awards Gallery</h3>
         <div class="swiper awards-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="img/a1.jpg" alt="Kavyashree Award" loading="lazy">
               <div class="slide-content">
-                <h4>Kavyashree Award</h4>
-                <p>Dr. Jeeshamp Literary Forum</p>
+                <h4 data-en="Kavyashree Award" data-kn="ಕಾವ್ಯಶ್ರೀ ಪ್ರಶಸ್ತಿ">Kavyashree Award</h4>
+                <p data-en="Dr. Jeeshamp Literary Forum" data-kn="ಡಾ. ಜೀಶಾಂಪ್ ಸಾಹಿತ್ಯ ವೇದಿಕೆ">Dr. Jeeshamp Literary Forum</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a2.jpg" alt="Sahitya Navachetana National Award" loading="lazy">
               <div class="slide-content">
-                <h4>National Award</h4>
-                <p>Sahitya Navachetana</p>
+                <h4 data-en="National Award" data-kn="ರಾಷ್ಟ್ರೀಯ ಪ್ರಶಸ್ತಿ">National Award</h4>
+                <p data-en="Sahitya Navachetana" data-kn="ಸಾಹಿತ್ಯ ನವಚೇತನ">Sahitya Navachetana</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a3.jpg" alt="District President Appointment" loading="lazy">
               <div class="slide-content">
-                <h4>Leadership Role</h4>
-                <p>District President</p>
+                <h4 data-en="Leadership Role" data-kn="ನಾಯಕತ್ವದ ಪಾತ್ರ">Leadership Role</h4>
+                <p data-en="District President" data-kn="ಜಿಲ್ಲಾ ಅಧ್ಯಕ್ಷೆ">District President</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a4.jpg" alt="Poetry Competition Prize" loading="lazy">
               <div class="slide-content">
-                <h4>Poetry Prize</h4>
-                <p>Ileya Madilalli - ₹2500/-</p>
+                <h4 data-en="Poetry Prize" data-kn="ಕಾವ್ಯ ಪ್ರಶಸ್ತಿ">Poetry Prize</h4>
+                <p data-en="Ileya Madilalli - ₹2500/-" data-kn="ಇಳೆಯ ಮಡಿಲಲ್ಲಿ - ₹2500/-">Ileya Madilalli - ₹2500/-</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a5.jpg" alt="Literary Certificates Collection" loading="lazy">
               <div class="slide-content">
-                <h4>Certificates</h4>
-                <p>Mandara Literary Group</p>
+                <h4 data-en="Certificates" data-kn="ಪ್ರಮಾಣಪತ್ರಗಳು">Certificates</h4>
+                <p data-en="Mandara Literary Group" data-kn="ಮಂದಾರ ಸಾಹಿತ್ಯ ಗುಂಪು">Mandara Literary Group</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a6.jpg" alt="Award Ceremony" loading="lazy">
               <div class="slide-content">
-                <h4>Award Ceremony</h4>
-                <p>Recognition events</p>
+                <h4 data-en="Award Ceremony" data-kn="ಪ್ರಶಸ್ತಿ ಸಮಾರಂಭ">Award Ceremony</h4>
+                <p data-en="Recognition events" data-kn="ಗುರುತಿಸುವಿಕೆ ಕಾರ್ಯಕ್ರಮಗಳು">Recognition events</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a7.jpg" alt="Literary Forum Meeting" loading="lazy">
               <div class="slide-content">
-                <h4>Literary Forum</h4>
-                <p>Community meetings</p>
+                <h4 data-en="Literary Forum" data-kn="ಸಾಹಿತ್ಯ ವೇದಿಕೆ">Literary Forum</h4>
+                <p data-en="Community meetings" data-kn="ಸಮುದಾಯ ಸಭೆಗಳು">Community meetings</p>
               </div>
             </div>
             <div class="swiper-slide">
               <img src="img/a8.jpg" alt="Achievement Display" loading="lazy">
               <div class="slide-content">
-                <h4>Achievements</h4>
-                <p>Awards collection</p>
+                <h4 data-en="Achievements" data-kn="ಸಾಧನೆಗಳು">Achievements</h4>
+                <p data-en="Awards collection" data-kn="ಪ್ರಶಸ್ತಿಗಳ ಸಂಗ್ರಹ">Awards collection</p>
               </div>
             </div>
           </div>
@@ -583,13 +594,13 @@
   <section id="youtube" class="youtube">
     <div class="container">
       <div class="section-header">
-        <h2>YouTube Channel</h2>
-        <p>Join me on my creative journey</p>
+        <h2 data-en="YouTube Channel" data-kn="ಯೂಟ್ಯೂಬ್ ಚಾನೆಲ್">YouTube Channel</h2>
+        <p data-en="Join me on my creative journey" data-kn="ನನ್ನ ಸೃಜನಾತ್ಮಕ ಪ್ರಯಾಣದಲ್ಲಿ ನನ್ನೊಂದಿಗೆ ಸೇರಿ">Join me on my creative journey</p>
       </div>
       <div class="youtube-content">
         <div class="youtube-info">
-          <h3>Welcome to Rashmi's World of Exploration!</h3>
-          <p>
+          <h3 data-en="Welcome to Rashmi's World of Exploration!" data-kn="ರಶ್ಮಿಯ ಅನ್ವೇಷಣೆಯ ಲೋಕಕ್ಕೆ ಸ್ವಾಗತ!">Welcome to Rashmi's World of Exploration!</h3>
+          <p data-en="Join me on a journey filled with laughter and excitement. If you are looking for cooking tips, home remedies, shopping reviews, travelling experience, home tour, social concerns, and motivational stories, you are absolutely in the right platform." data-kn="ನಗು ಮತ್ತು ಉತ್ಸಾಹದಿಂದ ತುಂಬಿದ ಪ್ರಯಾಣದಲ್ಲಿ ನನ್ನೊಂದಿಗೆ ಸೇರಿ. ನಿಮಗೆ ಅಡುಗೆ ಸಲಹೆಗಳು, ಮನೆಮದ್ದು, ಶಾಪಿಂಗ್ ವಿಮರ್ಶೆಗಳು, ಪ್ರವಾಸ ಅನುಭವ, ಮನೆಯ ಪ್ರವಾಸ, ಸಾಮಾಜಿಕ ಕಾಳಜಿಗಳು ಮತ್ತು ಪ್ರೇರಣಾದಾಯಕ ಕಥೆಗಳು ಬೇಕಾಗಿದ್ದರೆ, ನೀವು ಸಂಪೂರ್ಣವಾಗಿ ಸರಿಯಾದ ವೇದಿಕೆಯಲ್ಲಿದ್ದೀರಿ.">
             Join me on a journey filled with laughter and excitement. If you are looking for cooking tips, 
             home remedies, shopping reviews, travelling experience, home tour, social concerns, and motivational stories, 
             you are absolutely in the right platform.
@@ -598,21 +609,21 @@
             <div class="stat-item">
               <i class="fas fa-calendar-alt"></i>
               <div>
-                <span class="stat-number">Channel Started</span>
+                <span class="stat-number" data-en="Channel Started" data-kn="ಚಾನೆಲ್ ಪ್ರಾರಂಭ">Channel Started</span>
                 <span class="stat-label">22.01.2024</span>
               </div>
             </div>
             <div class="stat-item">
               <i class="fas fa-envelope"></i>
               <div>
-                <span class="stat-number">Contact</span>
+                <span class="stat-number" data-en="Contact" data-kn="ಸಂಪರ್ಕ">Contact</span>
                 <span class="stat-label">rashmivishwanathk@gmail.com</span>
               </div>
             </div>
           </div>
           <a href="https://www.youtube.com/@Charavi24" target="_blank" class="youtube-button">
             <i class="fab fa-youtube"></i>
-            Subscribe Now!
+            <span data-en="Subscribe Now!" data-kn="ಈಗಲೇ ಚಂದಾದಾರರಾಗಿ!">Subscribe Now!</span>
           </a>
         </div>
         <div class="youtube-image">
@@ -628,13 +639,13 @@
   <section id="contact" class="contact">
     <div class="container">
       <div class="section-header">
-        <h2>Get In Touch</h2>
-        <p>I'd love to hear from you</p>
+        <h2 data-en="Get In Touch" data-kn="ಸಂಪರ್ಕದಲ್ಲಿರಿ">Get In Touch</h2>
+        <p data-en="I'd love to hear from you" data-kn="ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾನು ಇಷ್ಟಪಡುತ್ತೇನೆ">I'd love to hear from you</p>
       </div>
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Let's Connect</h3>
-          <p>Have a question or want to collaborate? Feel free to reach out!</p>
+          <h3 data-en="Let's Connect" data-kn="ಸಂಪರ್ಕದಲ್ಲಿರೋಣ">Let's Connect</h3>
+          <p data-en="Have a question or want to collaborate? Feel free to reach out!" data-kn="ಪ್ರಶ್ನೆ ಇದೆಯೇ ಅಥವಾ ಸಹಕಾರ ಮಾಡಲು ಬಯಸುವಿರಾ? ಮುಕ್ತವಾಗಿ ಸಂಪರ್ಕಿಸಿ!">Have a question or want to collaborate? Feel free to reach out!</p>
           <div class="contact-methods">
             <div class="contact-method">
               <i class="fas fa-envelope"></i>
@@ -652,17 +663,17 @@
         </div>
         <form class="contact-form" name="contact" method="POST" data-netlify="true">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="name" data-en="Your Name" data-kn="ನಿಮ್ಮ ಹೆಸರು" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="email" name="email" data-en="Your Email" data-kn="ನಿಮ್ಮ ಇಮೇಲ್" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <textarea name="message" data-en="Your Message" data-kn="ನಿಮ್ಮ ಸಂದೇಶ" placeholder="Your Message" rows="5" required></textarea>
           </div>
           <button type="submit" class="submit-button">
             <i class="fas fa-paper-plane"></i>
-            Send Message
+            <span data-en="Send Message" data-kn="ಸಂದೇಶ ಕಳುಹಿಸಿ">Send Message</span>
           </button>
         </form>
       </div>
@@ -675,7 +686,7 @@
       <div class="footer-content">
         <div class="footer-info">
           <h3>Rashmi K. Vishwanath</h3>
-          <p>Librarian • Literary Writer • Social Worker</p>
+          <p data-en="Librarian • Literary Writer • Social Worker" data-kn="ಗ್ರಂಥಾಲಯಾಧ್ಯಕ್ಷೆ • ಸಾಹಿತ್ಯಿಕ ಲೇಖಕಿ • ಸಮಾಜ ಸೇವಕಿ">Librarian • Literary Writer • Social Worker</p>
           <div class="social-links">
             <a href="https://www.youtube.com/@Charavi24" target="_blank">
               <i class="fab fa-youtube"></i>
@@ -686,8 +697,8 @@
           </div>
         </div>
         <div class="footer-credits">
-          <p>&copy; 2024-25 All Rights Reserved</p>
-          <p>Designed by <a href="https://arshadpasha.netlify.app/" target="_blank">Arshad</a></p>
+          <p data-en="© 2024-25 All Rights Reserved" data-kn="© 2024-25 ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ">&copy; 2024-25 All Rights Reserved</p>
+          <p data-en="Designed by" data-kn="ವಿನ್ಯಾಸ">Designed by <a href="https://arshadpasha.netlify.app/" target="_blank">Arshad</a></p>
         </div>
       </div>
       <div class="counter">
