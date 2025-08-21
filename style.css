@@ -13,7 +13,11 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f1f5f9;
   --bg-dark: #0f172a;
-  --border-color: #e2e8f0;
+  --border-color: #e60800;
+  --white: #ffffff;
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-70: rgba(255, 255, 255, 0.7);
   --shadow-sm: 0 1px 2px 0 rgba(16, 49, 182, 0.15);
   --shadow-md: 0 4px 6px -1px rgba(16, 49, 182, 0.2);
   --shadow-lg: 0 10px 15px -3px rgba(16, 49, 182, 0.25);
