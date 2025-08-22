@@ -9,13 +9,12 @@ const translations = {
         langText: 'ಕನ್ನಡ',
         typingStrings: [
             'Librarian at Sheshadripuram College',
-            'Literary Writer & Poet', 
-            'Social Worker & Blood Donor',
+            'Litterateur',
+            'Social Thinker',
             'Program Anchor',
             'Travel Enthusiast',
             'Gardening Lover',
-            'Award-Winning Author',
-            'Community Leader'
+            'Award-Winning Author'
         ]
     },
     kn: {
