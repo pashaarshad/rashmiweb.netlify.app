@@ -13,7 +13,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f1f5f9;
   --bg-dark: #0f172a;
-  --border-color: #e60800;
+  --border-color: #000000;
   --white: #ffffff;
   --white-90: rgba(255, 255, 255, 0.9);
   --white-80: rgba(255, 255, 255, 0.8);
@@ -24,6 +24,7 @@
   --shadow-xl: 0 20px 25px -5px rgba(16, 49, 182, 0.3);
   --gradient-primary: linear-gradient(135deg, #1031b6 0%, #1e40af 100%);
   --gradient-secondary: linear-gradient(135deg, #04810e 0%, #04810e 100%);
+  --gradient-secondary123: linear-gradient(135deg, #941f1b 0%, #941f1b 100%);
   --gradient-accent: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
   --elegant-glow: 0 0 20px rgba(16, 49, 182, 0.4);
 }
@@ -319,6 +320,7 @@ body {
   background: var(--gradient-secondary);
   color: white;
   text-decoration: none;
+  font-size: 10px;
   border-radius: 30px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -326,6 +328,25 @@ body {
 }
 
 .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elegant-glow), var(--shadow-xl);
+}
+
+.cta-button1234 {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--gradient-secondary123);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: medium;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  width: auto;
+}
+
+.cta-button1234:hover {
   transform: translateY(-2px);
   box-shadow: var(--elegant-glow), var(--shadow-xl);
 }
